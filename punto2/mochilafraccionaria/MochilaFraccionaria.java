@@ -1,4 +1,4 @@
-package punto2;
+package punto2.mochilafraccionaria;
 
 import java.util.ArrayList;
 import java.util.List;
