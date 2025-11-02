@@ -22,14 +22,12 @@ class Objeto {
 
 public class MochilaFraccionaria {
 
-    public double obtenerMaximo(List<Objeto> objetos, int capacidadMochila) {
+    public double obtenerMaximo(List<Objeto> objetos, int capacidadMochila, ArrayList<Objeto> objetosSeleccionados) {
         // Ordenar los objetos por valor/peso en orden descendente
         objetos.sort((o1, o2) -> Double.compare(o2.getValorPorPeso(), o1.getValorPorPeso()));
 
         double valorTotal = 0.0;
         int w=capacidadMochila;
-        ArrayList<Objeto> objetosSeleccionados = new ArrayList<>();
-
         for (Objeto obj : objetos) {
             if (w == 0) {
                 break; // La mochila está llena
