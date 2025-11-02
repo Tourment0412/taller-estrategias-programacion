@@ -28,8 +28,7 @@ public class Kruskal {
     }
 
     public static void main(String[] args) {
-
-        // An edge contains, weight, source and destination
+        //En este caso las aristas tambien estan ordenadas como {nodo origen, nodo destino, peso} siendo grafos no dirigidos
         int[][] edges = {
                 { 0, 1, 10 }, { 1, 3, 15 }, { 2, 3, 4 }, { 2, 0, 6 }, { 0, 3, 5 }
         };
