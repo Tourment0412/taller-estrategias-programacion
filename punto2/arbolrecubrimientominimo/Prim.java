@@ -56,6 +56,9 @@ public class Prim {
 
     // Driver code
     public static void main(String[] args) {
+        /* Esta matriz representa las aristas que conforman el grafo
+        *  El formato es {nodo origen, nodo destino, peso} (Se recalca que es un grafo no dirigido)
+        */
         int graph[][] = new int[][] { { 0, 1, 5 },
                 { 1, 2, 3 },
                 { 0, 2, 1 } };
