@@ -5,37 +5,38 @@ import java.util.Comparator;
 
 public class Kruskal {
     public static int kruskalsMST(int V, int[][] edges) {
-        
+
         // Sort all edges based on weight
         Arrays.sort(edges, Comparator.comparingInt(e -> e[2]));
-        
+
         // Traverse edges in sorted order
         DSU dsu = new DSU(V);
         int cost = 0, count = 0;
-        
+
         for (int[] e : edges) {
             int x = e[0], y = e[1], w = e[2];
-            
+
             // Make sure that there is no cycle
             if (dsu.find(x) != dsu.find(y)) {
                 dsu.union(x, y);
                 cost += w;
-                if (++count == V - 1) break;
+                if (++count == V - 1)
+                    break;
             }
         }
         return cost;
     }
 
     public static void main(String[] args) {
-        
+
         // An edge contains, weight, source and destination
         int[][] edges = {
-            {0, 1, 10}, {1, 3, 15}, {2, 3, 4}, {2, 0, 6}, {0, 3, 5}
+                { 0, 1, 10 }, { 1, 3, 15 }, { 2, 3, 4 }, { 2, 0, 6 }, { 0, 3, 5 }
         };
-        
-       System.out.println(kruskalsMST(4, edges));
+
+        System.out.println(kruskalsMST(4, edges));
     }
-    
+
 }
 
 // Disjoint set data structure
