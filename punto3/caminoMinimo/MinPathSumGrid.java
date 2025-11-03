@@ -117,7 +117,6 @@ public class MinPathSumGrid {
         int[] dp = new int[m];
         // Inicialización de la primera celda y primera fila
         dp[0] = cost[0][0];
-        System.out.println("dp[0] = " + dp[0]);
         for (int j = 1; j < m; ++j) {
             dp[j] = dp[j - 1] + cost[0][j];
         }
@@ -125,7 +124,6 @@ public class MinPathSumGrid {
         for (int i = 1; i < n; ++i) {
             // Primera columna: solo se viene desde arriba
             dp[0] = dp[0] + cost[i][0];
-            System.out.println("dp[0] = " + dp[0]);
             for (int j = 1; j < m; ++j) {
                 dp[j] = cost[i][j] + Math.min(dp[j], dp[j - 1]);
 
@@ -134,12 +132,6 @@ public class MinPathSumGrid {
         return dp[m - 1];
     }
 
-    /**
-     * Ejemplo de uso con una matriz de costos pequeña.
-     * Salida esperada:
-     *   Costo mínimo (2D): 7
-     *   Costo mínimo (1D): 7
-     */
     public static void main(String[] args) {
         int[][] cost = {
             {1, 3, 1},
@@ -147,10 +139,10 @@ public class MinPathSumGrid {
             {4, 2, 1}
         };
 
-        int ans2D = minPathSum(cost);
+        //int ans2D = minPathSum(cost);
         int ans1D = minPathSum1D(cost);
-        //System.out.println("Costo mínimo (2D): " + ans2D); // esperado: 7
-        System.out.println("Costo mínimo (1D): " + ans1D); // esperado: 7
+        //System.out.println("Costo mínimo (2D): " + ans2D); 
+        System.out.println("Costo mínimo (1D): " + ans1D); 
     }
 }
 
