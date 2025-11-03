@@ -1,4 +1,4 @@
-package programacionDinamica.problemaMochila;
+package punto3.problemaMochila;
 
 /**
  * Resolución del problema clásico de la Mochila (0/1 Knapsack Problem)
@@ -27,7 +27,10 @@ package programacionDinamica.problemaMochila;
  *   - wt[]: pesos de los objetos.
  *   - n: índice actual de objeto a considerar (elementos 0 ... n-1).
  *   - memo: tabla memoizadora de soluciones parciales, dimensiones (n+1) x (W+1).
+ * 
+ * @author GeekForGeeks
  */
+
 
 class GfG_Memoization {
 

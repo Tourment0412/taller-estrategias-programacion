@@ -1,4 +1,4 @@
-package programacionDinamica.caminoMinimo;
+package punto3.caminoMinimo;
 // Programación Dinámica en matriz (solo arriba e izquierda)
 // En cada celda (i, j), el costo mínimo depende de min(dp[i-1][j], dp[i][j-1]) + cost[i][j]
 

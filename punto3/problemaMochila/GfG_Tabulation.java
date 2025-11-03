@@ -1,4 +1,4 @@
-package programacionDinamica.problemaMochila;
+package punto3.problemaMochila;
 
 /**
  * Resolución del problema de la Mochila 0/1 (Knapsack Problem) usando Programación Dinámica con tabulación (enfoque bottom-up).
@@ -30,7 +30,7 @@ package programacionDinamica.problemaMochila;
  * - Esta misma tabla puede usarse, si se desea, para recuperar qué objetos componen la solución óptima siguiendo los valores registrados.
  * - Si solo se desea el valor y no el subconjunto, se puede reducir el espacio a O(W) usando un array unidimensional.
  *
- * @author GPT + Usuario
+ * @author GeekForGeeks
  */
 class GfG_Tabulation {
 
