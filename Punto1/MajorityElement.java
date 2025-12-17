@@ -1,4 +1,4 @@
-package Punto1;
+package punto1;
 
 public class MajorityElement {
 
